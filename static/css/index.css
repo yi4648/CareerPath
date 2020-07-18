@@ -1,0 +1,305 @@
+body {
+    background: url("../images/灯2.jpg") no-repeat;
+    background-size: cover;
+}
+
+.container {
+    min-width: 1000px;
+    min-height: 700px;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 20px 20px 20px;
+}
+
+.title {
+    height: 10%;
+    /*width: 70%;*/
+    top: 20px;
+    color: white;
+    font-size: 30px;
+
+     display: flex;
+     align-content: center;
+     justify-content: center;
+}
+/*.title> .time{
+    margin-top: 30px;
+    margin-left: 100px;
+	color: white;
+	font-size: 15px;
+}*/
+
+.panel {
+    border: 20px solid red;
+    border-width: 20px;
+    box-sizing: border-box;
+    position: relative;
+    border-image-source: url("../images/k1.png");
+    border-image-slice: 20;
+    border-width: 20px;
+    border-image-repeat: stretch;
+}
+
+.inner {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    bottom: -20px;
+    left: -20px;
+    padding: 20px;
+}
+
+.column:nth-child(1) {
+    flex: 3;
+}
+
+.column:nth-child(1) > .count1 {
+    height: 144px;
+    margin-top: 10px;
+}
+.column:nth-child(1) >.count1 .lable{
+    width: 30%;
+    height: 20%;
+    color: white;
+    font-size: 7px;
+}
+
+.column:nth-child(1) > .count1 .item {
+    float: left;
+    width: 25%;
+    height: 70%;
+    text-align: center;
+    margin-top: 10px
+}
+
+.column:nth-child(1) > .count1 .item p {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.column:nth-child(1) > .count1 .item span {
+    color: #4c9bfd
+}
+
+
+.column:nth-child(1) > .moniter {
+    height: 443px;
+    margin-top: 20px;
+}
+
+.column:nth-child(1) > .moniter .tabs {
+    height: 24px;
+}
+
+.column:nth-child(1) > .moniter .tabs a {
+    font-size: 18px;
+    padding-left: 20px;
+    color: #1950c4;
+}
+
+.column:nth-child(1) > .moniter .tabs a.active {
+    color: white;
+}
+
+.column:nth-child(1) > .moniter .tabs a:nth-child(1) {
+    border-right: 2px solid #00f2f1;
+    padding-right: 30px;
+}
+
+.column:nth-child(1) > .moniter .tabs a:nth-child(2) {
+    margin-left: 10px;
+}
+
+.column:nth-child(1) > .moniter .content .head {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 38px;
+    line-height: 38px;
+    margin-top: 15px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 30px;
+}
+
+.column:nth-child(1) > .moniter .content .head span {
+    float: left;
+    width: 33%;
+    color: #68d8fe;
+}
+
+.column:nth-child(1) > .moniter .content .carousel {
+    height: 330px;
+    overflow: hidden;
+    margin-left: -20px;
+    margin-right: -20px;
+    position: relative;
+}
+
+.column:nth-child(1) > .moniter .content .carousel ul {
+    position: absolute;
+    width: 100%;
+}
+
+.column:nth-child(1) > .moniter .content .carousel ul li:hover {
+    background-color: green;
+
+}
+
+.column:nth-child(1) > .moniter .content .carousel ul li {
+    color: #5697e6;
+    height: 33px;
+    line-height: 33px;
+    padding-left: 30px;
+}
+
+.column:nth-child(1) > .moniter .content .carousel ul li span {
+    float: left;
+    width: 33%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.column:nth-child(1) > .xueli {
+    height: 336px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.column:nth-child(1) > .xueli h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.column:nth-child(1) > .xueli .echarts1 {
+    height: 260px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.column:nth-child(2) {
+    padding-left: 20px;
+    width: 40%;
+    flex: 4;
+}
+
+.column:nth-child(2) > .map {
+    height: 580px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.column:nth-child(2) > .gongzi {
+    height: 336px;
+    margin-top: 20px;
+
+}
+
+.column:nth-child(2) > .gongzi h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.column:nth-child(2) > .gongzi .echarts2 {
+    height: 260px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.column:nth-child(3) {
+    padding-left: 20px;
+    flex: 3;
+}
+
+.column:nth-child(3) > .count2 {
+    height: 144px;
+    margin-top: 10px;
+}
+.column:nth-child(3) >.count2 .lable{
+    width: 30%;
+    height: 20%;
+    color: white;
+    font-size: 7px;
+}
+
+.column:nth-child(3) > .count2 .item {
+    float: left;
+    width: 25%;
+    height: 70%;
+    text-align: center;
+    margin-top: 10px
+}
+
+.column:nth-child(3) > .count2 .item p {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.column:nth-child(3) > .count2 .item span {
+    color: #4c9bfd
+}
+
+.column:nth-child(3) > .gongsi {
+    height: 244px;
+    margin-top: 20px;
+}
+
+.column:nth-child(3) > .gongsi h3 {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.column:nth-child(3) > .gongsi .echarts3 {
+    height: 180px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.column:nth-child(3) > .wrap {
+    height: 250px;
+    margin-top: 20px;
+}
+.column:nth-child(3) > .wrap h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+}
+.column:nth-child(3) > .wrap .graph {
+    height: 190px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/*.column:nth-child(3) > .wrap > .channel {
+    height: 229px;
+    width: 48%;
+}
+
+.column:nth-child(3) > .wrap > .quarter {
+    height: 229px;
+    width: 48%;
+}*/
+
+.column:nth-child(3) > .jingyan {
+    height: 258px;
+    margin-top: 20px;
+}
+
+.column:nth-child(3) > .jingyan h3 {
+    color: white;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.column:nth-child(3) > .jingyan .echarts4 {
+    height: 200px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}

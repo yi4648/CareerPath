@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    font-size: 12px;
+}
+li{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+a{
+    color:#000;
+    text-decoration: none;
+}
+input{
+    border:0 none;
+    outline-style: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float:right;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
